@@ -1,0 +1,14 @@
+.top-banner{
+    width: 100%;
+    background: url(../img/hero.png) no-repeat center;
+    background-size: cover;
+    padding: 12.875rem 0 9.375rem ;
+    position: relative;
+}
+
+.hero-text{
+    font-size: 1.8rem;
+    color: var(--white);
+    
+}
+
