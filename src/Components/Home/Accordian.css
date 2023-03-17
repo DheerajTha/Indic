@@ -1,0 +1,25 @@
+.accordion-button:hover,
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-item{
+    border: 0;
+
+}
+.accordion-button{
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'monopoly';
+    color: var(--black);
+    border-radius: 0;
+
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 0px solid var(black);
+    background-color: white;
+
+
+}
