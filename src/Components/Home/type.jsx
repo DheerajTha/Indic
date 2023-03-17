@@ -5,11 +5,14 @@ const Typewriter = ({ text }) => {
   const [displayText, setDisplayText] = useState('');
 
   useEffect(() => {
+    setDisplayText("")
     let currentIndex = 0;
     const intervalId = setInterval(() => {
-      if (currentIndex >= text.length) {
-        clearInterval(intervalId);
-        return;
+      if (currentIndex >= text.length-1) {
+        // clearInterval(intervalId);
+        setDisplayText("")
+        currentIndex = 0;
+        // return;
       }
       setDisplayText((prev) => prev + text[currentIndex]);
       currentIndex++;
@@ -17,7 +20,7 @@ const Typewriter = ({ text }) => {
     return () => clearInterval(intervalId);
   }, [text]);
 
-  return <div className="typewriter">{displayText}</div>;
+  return <div className="typewriter h-10">{displayText}</div>;
 };
 
 export default Typewriter;
